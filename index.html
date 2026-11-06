@@ -13,7 +13,7 @@
     header{background:rgba(255,255,255,.96);position:sticky;top:0;z-index:10;box-shadow:0 2px 16px #1234}
     .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:13px 0}.brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--green);line-height:1.2}
     .logo{width:44px;height:44px;border-radius:14px;background:var(--green);color:white;display:grid;place-items:center;font-size:19px;font-weight:900;border:3px solid var(--gold)}
-    nav{display:flex;gap:22px;align-items:center;font-size:14px;font-weight:700}nav a:hover{color:var(--green2)}
+    nav{display:flex;gap:18px;align-items:center;font-size:14px;font-weight:700}nav a:hover{color:var(--green2)}
     .btn{display:inline-block;padding:12px 20px;border-radius:999px;background:var(--gold);color:#3b2b08;font-weight:800;box-shadow:0 7px 18px #b8862633}
     .hero{background:radial-gradient(circle at 80% 20%,#ffffff24 0 10%,transparent 30%),linear-gradient(125deg,#084b3b,#138565);color:white;padding:88px 0 82px;overflow:hidden;position:relative}
     .hero:after{content:"";position:absolute;width:380px;height:380px;border:1px solid #ffffff30;border-radius:50%;right:-100px;bottom:-220px;box-shadow:0 0 0 35px #ffffff0b,0 0 0 75px #ffffff08}
@@ -29,12 +29,12 @@
     .about-panel h3{margin-top:0;color:var(--green);font-size:23px}.about-panel p{color:#4d655d}
     .pill-row{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px}.pill{background:white;border:1px solid #d6e7dc;padding:7px 12px;border-radius:999px;font-size:13px;font-weight:700;color:var(--green)}
     .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;padding:26px;border-radius:20px;box-shadow:0 10px 30px #18332c0c;border:1px solid #edf1e9}.card .symbol{width:48px;height:48px;border-radius:15px;background:#e8f2eb;display:grid;place-items:center;font-size:23px;margin-bottom:16px}.card h3{margin:0 0 8px;color:var(--green)}.card p{margin:0;color:var(--muted);font-size:14px}
-    .facilities{background:#f0f5ef}.facility-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.facility{background:white;padding:18px;border-radius:16px;font-weight:700}.facility span{color:var(--green2);margin-right:9px}
+    .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.gallery-item{min-height:190px;border-radius:20px;padding:22px;display:flex;flex-direction:column;justify-content:flex-end;color:white;background:linear-gradient(145deg,#0b624c,#138565);box-shadow:0 10px 25px #18332c18}.gallery-item:nth-child(2){background:linear-gradient(145deg,#80602a,#d4a84d)}.gallery-item:nth-child(3){background:linear-gradient(145deg,#315a77,#6a9bb4)}.gallery-item .symbol{font-size:34px;margin-bottom:auto}.gallery-item strong{font-size:18px}.gallery-item small{color:#ffffffd9}.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.news-card{background:white;border:1px solid #edf1e9;border-radius:18px;padding:24px}.news-card small{color:var(--green2);font-weight:800;text-transform:uppercase;letter-spacing:1px}.news-card h3{color:var(--green);margin:9px 0}.news-card p{color:var(--muted);font-size:14px;margin:0}.notice{background:#fff8e8;border:1px solid #f0dfb7;border-radius:12px;padding:12px 16px;color:#70551e;font-size:13px;margin-top:20px}.facilities{background:#f0f5ef}.facility-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.facility{background:white;padding:18px;border-radius:16px;font-weight:700}.facility span{color:var(--green2);margin-right:9px}
     .leader{display:flex;gap:20px;align-items:center;background:white;border-radius:22px;padding:25px;max-width:650px;margin:auto;box-shadow:0 10px 30px #18332c0c}.avatar{width:72px;height:72px;flex:none;border-radius:50%;background:#e8f2eb;display:grid;place-items:center;color:var(--green);font-size:27px}.leader h3{margin:0;color:var(--green)}.leader p{margin:4px 0 0;color:var(--muted);font-size:14px}
     .cta{background:linear-gradient(120deg,#084b3b,#138565);color:white;text-align:center;padding:62px 20px;border-radius:28px}.cta h2{font-size:clamp(27px,4vw,38px);margin:0 0 10px}.cta p{color:#e0f1e9;max-width:650px;margin:0 auto 24px}
     .contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-box{background:white;padding:25px;border-radius:18px;border:1px solid #edf1e9}.contact-box h3{color:var(--green);margin-top:0}
     footer{background:#073d31;color:#d9eee5;padding:28px 0;text-align:center;font-size:13px}footer strong{color:#ffdc8c}
-    @media(max-width:760px){.nav{align-items:flex-start}.brand{font-size:13px}nav{gap:10px;flex-wrap:wrap;justify-content:flex-end;font-size:12px}.nav .btn{display:none}.hero{padding:60px 0}.hero-grid,.about,.contact{grid-template-columns:1fr}.hero-card{max-width:360px;margin:auto}.cards,.facility-grid{grid-template-columns:1fr}.leader{align-items:flex-start}}
+    @media(max-width:760px){.nav{align-items:flex-start}.brand{font-size:13px}nav{gap:10px;flex-wrap:wrap;justify-content:flex-end;font-size:12px}.nav .btn{display:none}.hero{padding:60px 0}.hero-grid,.about,.contact{grid-template-columns:1fr}.hero-card{max-width:360px;margin:auto}.cards,.facility-grid,.gallery-grid,.news-grid{grid-template-columns:1fr}.leader{align-items:flex-start}}
   </style>
 </head>
 <body>
@@ -42,7 +42,7 @@
     <div class="wrap nav">
       <a class="brand" href="#beranda"><span class="logo">FQ</span><span>MTs Fadlul Qur'an<br><small>Riyadus Sholihin</small></span></a>
       <nav aria-label="Navigasi utama">
-        <a href="#profil">Profil</a><a href="#unggulan">Program</a><a href="#fasilitas">Fasilitas</a><a href="#kontak">Kontak</a>
+        <a href="#profil">Profil</a><a href="#unggulan">Program</a><a href="#fasilitas">Fasilitas</a><a href="#galeri">Galeri</a><a href="#berita">Berita</a><a href="#kontak">Kontak</a>
       </nav>
       <a class="btn" href="#ppdb">Info SPMB</a>
     </div>
@@ -85,7 +85,31 @@
       </div>
     </section>
 
-    <section class="facilities" id="fasilitas">
+
+    <section id="galeri">
+      <div class="wrap">
+        <div class="section-head"><span>Galeri Foto</span><h2>Potret Kegiatan Madrasah</h2><p>Dokumentasi program dan suasana pembelajaran MTs Fadlul Qur'an Riyadus Sholihin.</p></div>
+        <div class="gallery-grid">
+          <article class="gallery-item"><div class="symbol">📖</div><strong>Tahfidz Al-Qur'an</strong><small>Dokumentasi program unggulan</small></article>
+          <article class="gallery-item"><div class="symbol">📚</div><strong>Pembelajaran Kitab</strong><small>Kegiatan belajar pesantren</small></article>
+          <article class="gallery-item"><div class="symbol">💻</div><strong>Literasi Teknologi</strong><small>Pembelajaran Informatika</small></article>
+        </div>
+        <div class="notice">Galeri ini masih berupa tampilan awal. Foto asli kegiatan madrasah dapat ditambahkan pada tahap berikutnya.</div>
+      </div>
+    </section>
+
+    <section id="berita">
+      <div class="wrap">
+        <div class="section-head"><span>Berita & Pengumuman</span><h2>Kabar Terbaru Madrasah</h2><p>Informasi kegiatan, program pendidikan, dan pengumuman resmi madrasah.</p></div>
+        <div class="news-grid">
+          <article class="news-card"><small>Program Madrasah</small><h3>Program Unggulan Tahfidz, Kitab Kuning, dan IT</h3><p>MTs Fadlul Qur'an mengembangkan pendidikan berbasis pesantren dengan penguatan Al-Qur'an, keilmuan Islam, dan keterampilan teknologi.</p></article>
+          <article class="news-card"><small>Informasi Pendidikan</small><h3>Kurikulum Merdeka dan Kurikulum Cinta</h3><p>Pembelajaran diarahkan untuk membangun pengetahuan, karakter, adab, dan kecintaan terhadap proses belajar.</p></article>
+          <article class="news-card"><small>Informasi SPMB</small><h3>Penerimaan Peserta Didik Baru</h3><p>Calon peserta didik dan orang tua dapat menghubungi pihak madrasah untuk memperoleh informasi pendaftaran.</p></article>
+        </div>
+        <div class="notice">Konten berita di atas merupakan informasi pengenalan awal, bukan laporan kegiatan bertanggal. Berita terbaru dapat ditambahkan setelah dokumentasi tersedia.</div>
+      </div>
+    </section>
+\n    <section class="facilities" id="fasilitas">
       <div class="wrap">
         <div class="section-head"><span>Fasilitas</span><h2>Ruang untuk Belajar dan Berkembang</h2><p>Fasilitas pendukung kegiatan pembelajaran dan pengembangan potensi peserta didik.</p></div>
         <div class="facility-grid">
